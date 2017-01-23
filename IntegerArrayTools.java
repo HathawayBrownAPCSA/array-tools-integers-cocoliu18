@@ -49,63 +49,6 @@ public class IntegerArrayTools
       return false;
   }
   
-  /** Finds the biggest number 
-    */
-  public int getMax ()
-  {
-    int maxNum = arrayData[0]; 
-    for (int i = 0; i< arrayCount; i++)
-    {
-      if (arrayData [i] > maxNum)
-        maxNum = arrayData [i]; 
-    }
-    return maxNum; 
-  }
-  
-  /** Max index
-     */ 
-  public int getMaxIndex ()
-  {
-    int pos = 0; 
-    for (int i = 0; i < arrayCount; i++)
-    {
-      pos = i; 
-    }
-    return pos; 
-  }
-    
-  
-  /** Finds the minimum 
-    */
-  public int getMin ()
-  {
-    int minNum = arrayData[0]; 
-    for (int i = 0; i< arrayCount; i++)
-    {
-      if (arrayData [i] < minNum)
-        minNum = arrayData [i]; 
-    }
-    return minNum; 
-  }
-  
-  /** Min Index
-    */
-  public int getMinIndex()
-  {
-    int minIndex = 0; 
-    int minNum = arrayData[0]; 
-    for (int i = 0; i<arrayCount; i++)
-  {
-    if (arrayData[i] < minNum)
-    {
-      minNum = arrayData[i]; 
-      minIndex = i; 
-    }
-  }
-  return minIndex; 
-  }
-  
-  
     /** Fills the array nums with integers from 1 to n
     * @param n Upper bound for numbers with which to fill the array.
     * @param count the array to fill.  Returns a modified array.
@@ -138,6 +81,70 @@ public class IntegerArrayTools
   }
   
   // -------------------- METHODS TO WORK WITH THE ARRAY --------------------------
+  /** Finds the biggest number 
+    * @return the maximum number 
+    */
+  public int getMax ()
+  {
+    int maxNum = arrayData[0]; 
+    for (int i = 0; i< arrayCount; i++)
+    {
+      if (arrayData [i] > maxNum)
+        maxNum = arrayData [i]; 
+    }
+    return maxNum; 
+  }
+  
+  /** Max index
+    * @return where the maximum number is in the array. 
+     */ 
+  public int getMaxIndex ()
+  {
+    int pos = 0; 
+    int maxNum = arrayData[0]; 
+    for (int i = 0; i < arrayCount; i++)
+    {
+      if (arrayData[i] > maxNum)
+      {
+        pos = i; 
+      }
+    }
+    return pos; 
+  }
+    
+  
+  /** Finds the minimum 
+    * @return the minimum number 
+    */
+  public int getMin ()
+  {
+    int minNum = arrayData[0]; 
+    for (int i = 0; i< arrayCount; i++)
+    {
+      if (arrayData [i] < minNum)
+        minNum = arrayData [i]; 
+    }
+    return minNum; 
+  }
+  
+  /** Min Index
+    * @return where the minimum number is in the array. 
+    */
+  public int getMinIndex()
+  {
+    int minIndex = 0; 
+    int minNum = arrayData[0]; 
+    for (int i = 0; i<arrayCount; i++)
+  {
+    if (arrayData[i] < minNum)
+    {
+      minNum = arrayData[i]; 
+      minIndex = i; 
+    }
+  }
+  return minIndex; 
+  }
+  
   /** Prints the array, spaces between numbers.
     */
   public void printArray ()
