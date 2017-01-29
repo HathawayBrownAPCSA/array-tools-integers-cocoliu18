@@ -1,0 +1,9 @@
+Not bad!  A good transition from integers to Strings.
+
+One small issue: the formenting and indentation on getMinIndex got a bit out of whack.
+One larger issue: getMaxIndex doesn't properly update the maxString, so it actually returns the last item that is greater than the first.
+Two ways to fix it:
+  (1) include another line in the "if" [like you have in getMinIndex], or 
+  (2) instead of comparing to maxString, compare to arrayData[pos].  You *do* correctly update pos if you get a later String.
+  
+Good work overall.  9/10
