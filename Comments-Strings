@@ -7,3 +7,5 @@ Two ways to fix it:
   (2) instead of comparing to maxString, compare to arrayData[pos].  You *do* correctly update pos if you get a later String.
   
 Good work overall.  9/10
+
+Update Feb. 1 - Thanks for the corrections!
